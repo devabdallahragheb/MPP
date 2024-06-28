@@ -1,0 +1,19 @@
+package homework.lab3.pro4;
+
+public class Condo extends Property {
+    private int numberOfFloors;
+
+public Condo(Address address, int numberOfFloors) {
+    super(address);
+    this.numberOfFloors = numberOfFloors;
+}
+
+@Override
+public double computeRent() {
+    return 400 * numberOfFloors;
+}
+
+public int getNumberOfFloors() {
+    return numberOfFloors;
+}
+}
